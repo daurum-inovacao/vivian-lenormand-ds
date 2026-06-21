@@ -1,0 +1,60 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "description": "Tokens de tipografia — Vivian Lenormand Design System"
+  },
+  "font": {
+    "family": {
+      "playfair":  { "$value": "'Playfair Display', serif",   "$type": "fontFamily", "$description": "Headings editoriais (h1–h6). Serifada, elegante, peso emocional." },
+      "lora":      { "$value": "'Lora', serif",               "$type": "fontFamily", "$description": "Body text padrão. Serifada, legível, confortável para leitura longa." },
+      "abhaya":    { "$value": "'Abhaya Libre', serif",       "$type": "fontFamily", "$description": "CTAs e headings emocionais. Botão primário, h1 de destaque." },
+      "poppins":   { "$value": "'Poppins', sans-serif",       "$type": "fontFamily", "$description": "Labels, captions, UI text. Hierarquia de suporte, uppercase tracking." }
+    },
+    "weight": {
+      "light":    { "$value": "300", "$type": "fontWeight" },
+      "regular":  { "$value": "400", "$type": "fontWeight" },
+      "medium":   { "$value": "500", "$type": "fontWeight" },
+      "semibold": { "$value": "600", "$type": "fontWeight" },
+      "bold":     { "$value": "700", "$type": "fontWeight" },
+      "extrabold":{ "$value": "800", "$type": "fontWeight" }
+    },
+    "size": {
+      "xs":  { "$value": "0.75rem",   "$type": "dimension", "$description": "12px" },
+      "sm":  { "$value": "0.875rem",  "$type": "dimension", "$description": "14px" },
+      "md":  { "$value": "1rem",      "$type": "dimension", "$description": "16px — base" },
+      "lg":  { "$value": "1.125rem",  "$type": "dimension", "$description": "18px" },
+      "xl":  { "$value": "1.25rem",   "$type": "dimension", "$description": "20px" },
+      "2xl": { "$value": "1.5rem",    "$type": "dimension", "$description": "24px" },
+      "3xl": { "$value": "1.875rem",  "$type": "dimension", "$description": "30px" },
+      "4xl": { "$value": "2.25rem",   "$type": "dimension", "$description": "36px" },
+      "5xl": { "$value": "3rem",      "$type": "dimension", "$description": "48px" }
+    },
+    "tracking": {
+      "$description": "Escala de letter-spacing — uso sistemático",
+      "xs":  { "$value": "0.18em", "$type": "dimension", "$description": "Botões uppercase, nav labels" },
+      "sm":  { "$value": "0.22em", "$type": "dimension", "$description": "Badges e chips" },
+      "md":  { "$value": "0.28em", "$type": "dimension", "$description": "Section headers uppercase" },
+      "lg":  { "$value": "0.35em", "$type": "dimension", "$description": "Títulos caps decorativos" },
+      "xl":  { "$value": "0.45em", "$type": "dimension", "$description": "Marcas e logotipos texto" }
+    }
+  },
+  "semantic": {
+    "$description": "Mapeamento semântico — qual fonte/peso usar em cada contexto",
+    "heading": {
+      "family":  { "$value": "{font.family.playfair}", "$type": "fontFamily" },
+      "weight":  { "$value": "{font.weight.bold}",     "$type": "fontWeight" }
+    },
+    "body": {
+      "family":  { "$value": "{font.family.lora}",     "$type": "fontFamily" },
+      "weight":  { "$value": "{font.weight.regular}",  "$type": "fontWeight" }
+    },
+    "cta": {
+      "family":  { "$value": "{font.family.abhaya}",   "$type": "fontFamily" },
+      "weight":  { "$value": "{font.weight.semibold}", "$type": "fontWeight" }
+    },
+    "label": {
+      "family":  { "$value": "{font.family.poppins}",  "$type": "fontFamily" },
+      "weight":  { "$value": "{font.weight.medium}",   "$type": "fontWeight" }
+    }
+  }
+}

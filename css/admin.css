@@ -1,0 +1,71 @@
+/**
+ * vivian-lenormand-ds — Admin Theme (Painel Interno)
+ * Tema escuro independente. Importar em: apps/admin/app/globals.css
+ * Requer: Mantine UI v8, Google Fonts carregadas via next/font
+ */
+
+:root {
+  /* Remap de fontes para o admin */
+  --font-abhaya:  var(--font-playfair);
+  --font-poppins: var(--font-lora);
+
+  /* Background e superfícies */
+  --vl-admin-bg:             #0f0c0d;
+  --vl-admin-bg-secondary:   #171314;
+  --vl-admin-surface:        rgba(24, 20, 20, 0.92);
+  --vl-admin-surface-strong: rgba(31, 26, 26, 0.97);
+  --vl-admin-surface-soft:   rgba(161, 110, 100, 0.08);
+
+  /* Bordas */
+  --vl-admin-border:        rgba(184, 163, 155, 0.14);
+  --vl-admin-border-strong: rgba(109, 71, 66, 0.34);
+
+  /* Texto */
+  --vl-admin-text:     #f4efed;
+  --vl-admin-text-dim: #b7a49d;
+
+  /* Sombra */
+  --vl-admin-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+
+  /* Cores de destaque (marca) */
+  --vl-admin-highlight:   #6D4742;
+  --vl-admin-highlight-2: #A16E64;
+
+  /* Controles */
+  --vl-admin-control-bg:       #1a1516;
+  --vl-admin-control-bg-strong:#1b1617;
+  --vl-admin-control-bg-hover: #241d1d;
+
+  /* Status */
+  --vl-admin-success:      #05df72;
+  --vl-admin-success-soft: rgba(5, 223, 114, 0.16);
+  --vl-admin-success-text: #c9f7dc;
+  --vl-admin-danger:       #f87171;
+  --vl-admin-danger-soft:  rgba(248, 113, 113, 0.16);
+  --vl-admin-danger-text:  #ffd1d1;
+
+  /* Toggles */
+  --vl-admin-toggle-on:    var(--vl-admin-success);
+  --vl-admin-toggle-off:   var(--vl-admin-danger);
+  --vl-admin-toggle-thumb: var(--vl-admin-bg-secondary);
+}
+
+body {
+  background: var(--vl-admin-bg);
+  color: var(--vl-admin-text);
+  font-family: var(--font-lora), serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+}
+
+/* Scrollbar do admin */
+.scrollbar-vivian-lenormand::-webkit-scrollbar       { width: 5px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-track  { background: rgba(109, 71, 66, 0.05); border-radius: 10px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-thumb  { background: rgba(109, 71, 66, 0.20); border-radius: 10px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-thumb:hover { background: rgba(109, 71, 66, 0.40); }

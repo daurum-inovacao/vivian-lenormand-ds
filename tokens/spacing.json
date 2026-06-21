@@ -1,0 +1,14 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "spacing": {
+    "3xs": { "$value": "0.25rem", "$type": "dimension", "$description": "4px" },
+    "2xs": { "$value": "0.5rem",  "$type": "dimension", "$description": "8px" },
+    "xs":  { "$value": "0.625rem","$type": "dimension", "$description": "10px" },
+    "sm":  { "$value": "0.75rem", "$type": "dimension", "$description": "12px" },
+    "md":  { "$value": "1rem",    "$type": "dimension", "$description": "16px — base" },
+    "lg":  { "$value": "1.25rem", "$type": "dimension", "$description": "20px" },
+    "xl":  { "$value": "1.5rem",  "$type": "dimension", "$description": "24px" },
+    "2xl": { "$value": "1.75rem", "$type": "dimension", "$description": "28px" },
+    "3xl": { "$value": "2rem",    "$type": "dimension", "$description": "32px" }
+  }
+}

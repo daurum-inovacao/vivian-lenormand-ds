@@ -1,0 +1,217 @@
+/**
+ * vivian-lenormand-ds — Web Theme (Portal das Alunas)
+ * Tema claro. Importar em: apps/web/app/globals.css
+ * Requer: Tailwind CSS v4, Google Fonts carregadas via next/font
+ */
+
+@import "tailwindcss";
+
+@theme inline {
+  /* Fontes */
+  --font-abhaya:   var(--font-abhaya);
+  --font-playfair: var(--font-playfair);
+  --font-lora:     var(--font-lora);
+  --font-poppins:  var(--font-poppins);
+
+  /* Paleta da Marca */
+  --color-vivian-lenormand-50:  #F6EEEC;
+  --color-vivian-lenormand-100: #E7D7D2;
+  --color-vivian-lenormand-200: #D8BFB6;
+  --color-vivian-lenormand-300: #C7A49A;
+  --color-vivian-lenormand-400: #B68A7F;
+  --color-vivian-lenormand-500: #A16E64;
+  --color-vivian-lenormand-600: #8D5C54;
+  --color-vivian-lenormand-700: #6D4742;
+  --color-vivian-lenormand-800: #573734;
+  --color-vivian-lenormand-900: #432927;
+
+  /* Aliases semânticos — uso diário */
+  --color-vivian-lenormand-primary:       #6D4742;
+  --color-vivian-lenormand-primary-hover: #5a3a35;
+  --color-vivian-lenormand-primary-light: #A16E64;
+  --color-vivian-lenormand-pink:          #F7C2CA;
+  --color-vivian-lenormand-cream:         #FDF3F6;
+  --color-vivian-lenormand-paper:         rgba(253, 243, 246, 0.63);
+  --color-vivian-lenormand-text:          #3F3F3F;
+  --color-vivian-lenormand-placeholder:   #C1C1C1;
+
+  /* Status */
+  --color-vivian-lenormand-success: #468D00;
+  --color-vivian-lenormand-danger:  #9B001C;
+
+  /* Background / Foreground */
+  --color-background: #fffafa;
+  --color-foreground: #2d1e1c;
+}
+
+:root {
+  --background: #fffafa;
+  --foreground: #2d1e1c;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lora), serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+}
+
+/* ─── Botão Primário ──────────────────────────────────────────────────────── */
+@utility btn-vivian-lenormand {
+  background: linear-gradient(180deg, #A16E64 0%, #6D4742 100%);
+  color: #FDF3F6;
+  border: none;
+  border-bottom: 0.6px solid rgba(168, 111, 101, 0.45);
+  border-radius: 9999px;
+  font-family: var(--font-abhaya), serif;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0px 3px 6px rgba(67, 45, 42, 0.27);
+  transition: all 200ms ease;
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(180deg, #b07a70 0%, #5a3a35 100%);
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(67, 45, 42, 0.35);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0px 2px 4px rgba(67, 45, 42, 0.2);
+  }
+
+  &:disabled {
+    background: linear-gradient(180deg, #c4a9a4 0%, #9e8a87 100%);
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+/* ─── Botão Secundário (glass) ───────────────────────────────────────────── */
+@utility btn-vivian-lenormand-secondary {
+  background: rgba(255, 255, 255, 0.55);
+  color: #6D4742;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 9999px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+
+  &:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.75);
+    transform: translateY(-2px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+/* ─── Input ──────────────────────────────────────────────────────────────── */
+@utility input-vivian-lenormand {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  background: rgba(253, 243, 246, 0.63);
+  border: none;
+  border-radius: 20px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  color: var(--foreground);
+  outline: none;
+  transition: border 200ms ease, box-shadow 200ms ease;
+
+  &::placeholder {
+    color: #C1C1C1;
+  }
+
+  &:focus {
+    border: 1.5px solid rgba(109, 71, 66, 0.4);
+    box-shadow: 0 0 0 3px rgba(109, 71, 66, 0.08);
+    outline: none;
+  }
+}
+
+/* ─── Glass Surface ──────────────────────────────────────────────────────── */
+@utility glass-vivian-lenormand {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+/* ─── Background texturizado ─────────────────────────────────────────────── */
+@utility bg-vivian-lenormand-texture {
+  background-image: url(/background.webp);
+}
+
+/* ─── Scrollbar customizada ──────────────────────────────────────────────── */
+.scrollbar-vivian-lenormand::-webkit-scrollbar       { width: 5px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-track  { background: rgba(109, 71, 66, 0.05); border-radius: 10px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-thumb  { background: rgba(109, 71, 66, 0.20); border-radius: 10px; }
+.scrollbar-vivian-lenormand::-webkit-scrollbar-thumb:hover { background: rgba(109, 71, 66, 0.40); }
+
+/* ─── Animações ──────────────────────────────────────────────────────────── */
+@keyframes vl-fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vl-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes vl-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes vl-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes vl-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes vl-modal-zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@utility animate-vl-fade-in    { animation: vl-fade-in-up 600ms ease-out both; }
+@utility animate-vl-slide-up   { animation: vl-slide-up 300ms ease-out both; }
+@utility animate-vl-float      { animation: vl-float 6s ease-in-out infinite; }
+@utility animate-vl-spin       { animation: vl-spin 0.8s linear infinite; }
+@utility animate-vl-modal      { animation: vl-modal-zoom-in 200ms ease-out both; }
+
+.animate-vl-marquee {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  padding-left: 100% !important;
+  animation: vl-marquee 15s linear infinite !important;
+}
+
+.marquee-mask-vivian-lenormand {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "description": "Token canônico de glass morphism — Vivian Lenormand Design System. Um único utilitário: glass-vivian-lenormand."
+  },
+  "glass": {
+    "vivian-lenormand": {
+      "$description": "Superfície glass canônica da marca. Uso: cards, containers, modais flutuantes.",
+      "background":   { "$value": "rgba(255, 255, 255, 0.45)", "$type": "color" },
+      "blur":         { "$value": "12px",                      "$type": "dimension", "$description": "backdrop-filter: blur(12px) — equivale a backdrop-blur-md do Tailwind" },
+      "border-color": { "$value": "rgba(255, 255, 255, 0.30)", "$type": "color" },
+      "border-width": { "$value": "1px",                       "$type": "dimension" }
+    }
+  }
+}

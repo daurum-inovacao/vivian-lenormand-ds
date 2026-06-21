@@ -1,0 +1,10 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "shadow": {
+    "sm":    { "$value": "0 3px 6px rgba(67, 45, 42, 0.27)",   "$type": "shadow", "$description": "Botão primário padrão" },
+    "md":    { "$value": "0 5px 10px rgba(67, 45, 42, 0.35)",  "$type": "shadow", "$description": "Botão primário hover" },
+    "lg":    { "$value": "0 18px 45px rgba(109, 71, 66, 0.12)","$type": "shadow", "$description": "Cards de oferta" },
+    "xl":    { "$value": "0 24px 70px rgba(109, 71, 66, 0.16)","$type": "shadow", "$description": "Cards de destaque" },
+    "admin": { "$value": "0 24px 60px rgba(0, 0, 0, 0.35)",    "$type": "shadow", "$description": "Cards e papers do admin (dark theme)" }
+  }
+}

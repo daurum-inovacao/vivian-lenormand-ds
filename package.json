@@ -1,0 +1,37 @@
+{
+  "name": "@vivian-lenormand/design-system",
+  "version": "1.0.0",
+  "description": "Design System oficial da marca Vivian Lenormand Ateliê Místico",
+  "private": false,
+  "main": "./components/index.ts",
+  "types": "./components/index.ts",
+  "exports": {
+    ".": "./components/index.ts",
+    "./tokens/*": "./tokens/*",
+    "./css/web": "./css/web.css",
+    "./css/admin": "./css/admin.css",
+    "./theme/mantine": "./theme/mantine.ts"
+  },
+  "keywords": [
+    "vivian-lenormand",
+    "design-system",
+    "react",
+    "tailwindcss",
+    "mantine"
+  ],
+  "peerDependencies": {
+    "next": ">=15",
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "@mantine/core": { "optional": true }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

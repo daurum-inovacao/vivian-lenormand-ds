@@ -1,0 +1,12 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "radius": {
+    "sm":   { "$value": "0.5rem",    "$type": "dimension", "$description": "8px — badges, chips, tags" },
+    "md":   { "$value": "0.75rem",   "$type": "dimension", "$description": "12px — containers glass pequenos" },
+    "lg":   { "$value": "1rem",      "$type": "dimension", "$description": "16px — cards de curso (PortalCourseCard)" },
+    "xl":   { "$value": "1.25rem",   "$type": "dimension", "$description": "20px — inputs (input-vivian-lenormand)" },
+    "2xl":  { "$value": "1.5rem",    "$type": "dimension", "$description": "24px — modais (ConfirmModal, AlertModal)" },
+    "3xl":  { "$value": "2rem",      "$type": "dimension", "$description": "32px — OfferCard, containers hero" },
+    "full": { "$value": "9999px",    "$type": "dimension", "$description": "Pílula completa — botão primário, toasts, filter chips" }
+  }
+}

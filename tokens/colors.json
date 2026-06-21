@@ -1,0 +1,61 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "description": "Paleta de cores — Vivian Lenormand Design System",
+    "version": "1.0.0"
+  },
+  "color": {
+    "$description": "Paleta completa da marca Vivian Lenormand",
+    "brand": {
+      "$description": "Escala primária da marca (10 tons — marrom quente)",
+      "50":  { "$value": "#F6EEEC", "$type": "color", "$description": "Mais claro — fundos sutis" },
+      "100": { "$value": "#E7D7D2", "$type": "color" },
+      "200": { "$value": "#D8BFB6", "$type": "color" },
+      "300": { "$value": "#C7A49A", "$type": "color" },
+      "400": { "$value": "#B68A7F", "$type": "color" },
+      "500": { "$value": "#A16E64", "$type": "color", "$description": "Marrom claro — suporte e labels" },
+      "600": { "$value": "#8D5C54", "$type": "color" },
+      "700": { "$value": "#6D4742", "$type": "color", "$description": "Cor primária da marca" },
+      "800": { "$value": "#573734", "$type": "color" },
+      "900": { "$value": "#432927", "$type": "color", "$description": "Mais escuro — hover e ênfase" }
+    },
+    "pink": {
+      "DEFAULT": { "$value": "#F7C2CA", "$type": "color", "$description": "Rosa suave — destaques e badges" },
+      "cream":   { "$value": "#FDF3F6", "$type": "color", "$description": "Creme rosado — superfícies sólidas e modais" },
+      "paper":   { "$value": "rgba(253, 243, 246, 0.63)", "$type": "color", "$description": "Creme translúcido — header e superfícies glass" }
+    },
+    "semantic": {
+      "success": { "$value": "#468D00", "$type": "color", "$description": "Sucesso — badges concluído, notificações" },
+      "danger":  { "$value": "#9B001C", "$type": "color", "$description": "Erro — toast de erro, ações destrutivas" },
+      "warning": { "$value": "rgba(250, 176, 5, 0.26)", "$type": "color", "$description": "Alerta — status degraded" }
+    },
+    "neutral": {
+      "text":        { "$value": "#3F3F3F", "$type": "color", "$description": "Texto de corpo (parágrafos, descrições)" },
+      "placeholder": { "$value": "#C1C1C1", "$type": "color", "$description": "Placeholder de inputs" },
+      "foreground":  { "$value": "#2d1e1c", "$type": "color", "$description": "Texto padrão do body (web)" }
+    },
+    "background": {
+      "web": { "$value": "#fffafa", "$type": "color", "$description": "Fundo global — portal das alunas" }
+    },
+    "admin": {
+      "$description": "Tokens exclusivos do tema Admin (dark)",
+      "bg":             { "$value": "#0f0c0d", "$type": "color" },
+      "bg-secondary":   { "$value": "#171314", "$type": "color" },
+      "surface":        { "$value": "rgba(24, 20, 20, 0.92)", "$type": "color" },
+      "surface-strong": { "$value": "rgba(31, 26, 26, 0.97)", "$type": "color" },
+      "surface-soft":   { "$value": "rgba(161, 110, 100, 0.08)", "$type": "color" },
+      "border":         { "$value": "rgba(184, 163, 155, 0.14)", "$type": "color" },
+      "border-strong":  { "$value": "rgba(109, 71, 66, 0.34)", "$type": "color" },
+      "text":           { "$value": "#f4efed", "$type": "color" },
+      "text-dim":       { "$value": "#b7a49d", "$type": "color" },
+      "control-bg":     { "$value": "#1a1516", "$type": "color" },
+      "control-hover":  { "$value": "#241d1d", "$type": "color" },
+      "success":        { "$value": "#05df72", "$type": "color" },
+      "success-soft":   { "$value": "rgba(5, 223, 114, 0.16)", "$type": "color" },
+      "success-text":   { "$value": "#c9f7dc", "$type": "color" },
+      "danger":         { "$value": "#f87171", "$type": "color" },
+      "danger-soft":    { "$value": "rgba(248, 113, 113, 0.16)", "$type": "color" },
+      "danger-text":    { "$value": "#ffd1d1", "$type": "color" }
+    }
+  }
+}

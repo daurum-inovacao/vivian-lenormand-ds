@@ -1,0 +1,21 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "animation": {
+    "duration": {
+      "fast":   { "$value": "200ms", "$type": "duration", "$description": "Interações imediatas — hover, active de botões" },
+      "base":   { "$value": "300ms", "$type": "duration", "$description": "Modais, overlays, transições de estado" },
+      "entry":  { "$value": "600ms", "$type": "duration", "$description": "Animações de entrada — fadeInUp, logo" },
+      "card":   { "$value": "700ms", "$type": "duration", "$description": "Hover de cards — scale, shadow" },
+      "toast":  { "$value": "500ms", "$type": "duration", "$description": "Slide de notificações" },
+      "loop-fast":  { "$value": "0.8s",  "$type": "duration", "$description": "Spinner de loading" },
+      "loop-slow":  { "$value": "6s",    "$type": "duration", "$description": "Float de elementos decorativos" },
+      "marquee":    { "$value": "15s",   "$type": "duration", "$description": "Texto corrido horizontal" }
+    },
+    "easing": {
+      "default":  { "$value": "ease",                          "$type": "cubicBezier" },
+      "out":      { "$value": "ease-out",                      "$type": "cubicBezier" },
+      "spring":   { "$value": "cubic-bezier(0.16, 1, 0.3, 1)", "$type": "cubicBezier", "$description": "Easing de toast — entrada natural com overshoot" },
+      "linear":   { "$value": "linear",                        "$type": "cubicBezier" }
+    }
+  }
+}

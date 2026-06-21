@@ -1,0 +1,40 @@
+{
+  "$schema": "https://claude.ai/design/config/v1",
+  "name": "Vivian Lenormand Design System",
+  "description": "Design system oficial da marca Vivian Lenormand Ateliê Místico. Aesthetic místico-feminino premium.",
+  "version": "1.0.0",
+  "tokens": {
+    "colors":     "./tokens/colors.json",
+    "typography": "./tokens/typography.json",
+    "spacing":    "./tokens/spacing.json",
+    "radius":     "./tokens/radius.json",
+    "shadow":     "./tokens/shadow.json",
+    "glass":      "./tokens/glass.json",
+    "animation":  "./tokens/animation.json"
+  },
+  "themes": {
+    "web": {
+      "name": "Portal das Alunas (claro)",
+      "css": "./css/web.css",
+      "description": "Tema claro para o portal público e área logada das alunas"
+    },
+    "admin": {
+      "name": "Painel Admin (escuro)",
+      "css": "./css/admin.css",
+      "description": "Tema escuro para o painel interno de gestão"
+    }
+  },
+  "components": "./components/index.ts",
+  "brand": {
+    "name": "Vivian Lenormand Ateliê Místico",
+    "cnpj": "11.565.640/0001-65",
+    "aesthetic": "Místico-feminino premium. Tons de marrom quente e rosa rosé, tipografia serifada editorial, superfícies glass translúcidas.",
+    "primaryColor": "#6D4742",
+    "fonts": [
+      { "name": "Playfair Display", "role": "headings",  "source": "Google Fonts" },
+      { "name": "Lora",             "role": "body",      "source": "Google Fonts" },
+      { "name": "Abhaya Libre",     "role": "cta",       "source": "Google Fonts" },
+      { "name": "Poppins",          "role": "ui-labels", "source": "Google Fonts" }
+    ]
+  }
+}
