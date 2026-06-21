@@ -1,0 +1,43 @@
+/* Vivian Lenormand Design System — Color Tokens (CSS Custom Properties) */
+
+:root {
+  /* Escala primária da marca (10 tons — marrom quente) */
+  --vl-50:  #F6EEEC;
+  --vl-100: #E7D7D2;
+  --vl-200: #D8BFB6;
+  --vl-300: #C7A49A;
+  --vl-400: #B68A7F;
+  --vl-500: #A16E64;
+  --vl-600: #8D5C54;
+  --vl-700: #6D4742;
+  --vl-800: #573734;
+  --vl-900: #432927;
+
+  /* Aliases semânticos */
+  --vl-primary:       #6D4742;
+  --vl-primary-hover: #5a3a35;
+  --vl-primary-light: #A16E64;
+  --vl-pink:          #F7C2CA;
+  --vl-cream:         #FDF3F6;
+  --vl-paper:         rgba(253, 243, 246, 0.63);
+  --vl-text:          #3F3F3F;
+  --vl-placeholder:   #C1C1C1;
+  --vl-foreground:    #2d1e1c;
+  --vl-background:    #fffafa;
+
+  /* Semânticos de status */
+  --vl-success: #468D00;
+  --vl-danger:  #9B001C;
+
+  /* Admin (dark theme) */
+  --vl-admin-bg:             #0f0c0d;
+  --vl-admin-bg-secondary:   #171314;
+  --vl-admin-surface:        rgba(24, 20, 20, 0.92);
+  --vl-admin-border:         rgba(184, 163, 155, 0.14);
+  --vl-admin-border-strong:  rgba(109, 71, 66, 0.34);
+  --vl-admin-text:           #f4efed;
+  --vl-admin-text-dim:       #b7a49d;
+  --vl-admin-highlight:      #6D4742;
+  --vl-admin-success:        #05df72;
+  --vl-admin-danger:         #f87171;
+}

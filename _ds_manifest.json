@@ -1,0 +1,14 @@
+{
+  "namespace": "VivianLenormand_DS",
+  "components": [
+    { "name": "Button" },
+    { "name": "Input" },
+    { "name": "Badge" },
+    { "name": "Card" },
+    { "name": "Modal" },
+    { "name": "Separator" }
+  ],
+  "globalCssPaths": ["tokens/colors.css", "styles.css"],
+  "cards": [],
+  "templates": []
+}

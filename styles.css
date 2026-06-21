@@ -1,0 +1,111 @@
+/* Vivian Lenormand Design System — Core Styles */
+@import "./tokens/colors.css";
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+body {
+  background: var(--vl-background);
+  color: var(--vl-foreground);
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* ─── Botão Primário ─────────────────────────────────────────────────────── */
+.btn-vivian-lenormand {
+  background: linear-gradient(180deg, var(--vl-primary-light) 0%, var(--vl-primary) 100%);
+  color: var(--vl-cream);
+  border: none;
+  border-radius: 9999px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(67, 45, 42, 0.27);
+  transition: all 200ms ease;
+}
+.btn-vivian-lenormand:hover {
+  background: linear-gradient(180deg, #b07a70 0%, var(--vl-primary-hover) 100%);
+  transform: translateY(-2px);
+}
+.btn-vivian-lenormand:active { transform: translateY(0); }
+.btn-vivian-lenormand:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ─── Botão Secundário (glass) ───────────────────────────────────────────── */
+.btn-vivian-lenormand-secondary {
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--vl-primary);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 9999px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.btn-vivian-lenormand-secondary:hover { background: rgba(255,255,255,0.75); transform: translateY(-2px); }
+
+/* ─── Input ──────────────────────────────────────────────────────────────── */
+.input-vivian-lenormand {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  background: var(--vl-paper);
+  border: none;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  color: var(--vl-foreground);
+  outline: none;
+  transition: border 200ms ease, box-shadow 200ms ease;
+}
+.input-vivian-lenormand::placeholder { color: var(--vl-placeholder); }
+.input-vivian-lenormand:focus {
+  border: 1.5px solid rgba(109, 71, 66, 0.4);
+  box-shadow: 0 0 0 3px rgba(109, 71, 66, 0.08);
+}
+
+/* ─── Glass Surface ──────────────────────────────────────────────────────── */
+.glass-vivian-lenormand {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+/* ─── Badge ──────────────────────────────────────────────────────────────── */
+.badge-vivian-lenormand {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+.badge-vivian-lenormand-success { background: rgba(70,141,0,0.10); color: var(--vl-success); }
+.badge-vivian-lenormand-danger  { background: rgba(155,0,28,0.10);  color: var(--vl-danger); }
+.badge-vivian-lenormand-brand   { background: var(--vl-pink);        color: var(--vl-900); }
+
+/* ─── Animações ──────────────────────────────────────────────────────────── */
+@keyframes vl-fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes vl-modal-zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-vl-fade-in { animation: vl-fade-in-up 600ms ease-out both; }
+.animate-vl-modal   { animation: vl-modal-zoom-in 200ms ease-out both; }
