@@ -215,3 +215,119 @@ h1, h2, h3, h4, h5, h6 {
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
+
+/* ─── ProgressBar ────────────────────────────────────────────────────────── */
+@utility progress-track-vivian-lenormand {
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(109, 71, 66, 0.12);
+}
+
+@utility progress-fill-vivian-lenormand {
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #A16E64 0%, #6D4742 100%);
+  transition: width 700ms ease;
+}
+
+/* ─── SearchInput ────────────────────────────────────────────────────────── */
+@utility search-input-vivian-lenormand {
+  width: 100%;
+  height: 48px;
+  padding-left: 44px;
+  padding-right: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 9999px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 0.875rem;
+  color: var(--foreground);
+  outline: none;
+  transition: border 200ms ease, box-shadow 200ms ease;
+
+  &::placeholder { color: #C1C1C1; }
+  &:focus {
+    border: 1.5px solid rgba(109, 71, 66, 0.35);
+    box-shadow: 0 0 0 3px rgba(109, 71, 66, 0.07);
+  }
+}
+
+/* ─── Avatar ─────────────────────────────────────────────────────────────── */
+@utility avatar-vivian-lenormand {
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #E7D7D2;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── DrawerMenu ─────────────────────────────────────────────────────────── */
+@utility drawer-vivian-lenormand {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: 280px;
+  background: rgba(253, 243, 246, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid rgba(255, 255, 255, 0.40);
+  box-shadow: -8px 0 32px rgba(67, 41, 39, 0.12);
+}
+
+/* ─── HeroBanner ─────────────────────────────────────────────────────────── */
+@utility hero-banner-vivian-lenormand {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #E7D7D2;
+}
+
+/* ─── PurchaseCard ───────────────────────────────────────────────────────── */
+@utility purchase-card-vivian-lenormand {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(67, 41, 39, 0.10);
+  transition: transform 700ms ease, box-shadow 700ms ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(67, 41, 39, 0.16);
+  }
+}
+
+/* ─── OfferCard ──────────────────────────────────────────────────────────── */
+@utility offer-card-vivian-lenormand {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(67, 41, 39, 0.10);
+  transition: transform 700ms ease, box-shadow 700ms ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(67, 41, 39, 0.18);
+  }
+}
+
+/* ─── TestimonialCard ────────────────────────────────────────────────────── */
+@utility testimonial-card-vivian-lenormand {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 20px;
+  padding: 1.5rem;
+  position: relative;
+}

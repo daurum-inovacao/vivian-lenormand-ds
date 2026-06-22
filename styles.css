@@ -109,3 +109,310 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-vl-fade-in { animation: vl-fade-in-up 600ms ease-out both; }
 .animate-vl-modal   { animation: vl-modal-zoom-in 200ms ease-out both; }
+
+/* ─── ProgressBar ────────────────────────────────────────────────────────── */
+.progress-track-vivian-lenormand {
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(109, 71, 66, 0.12);
+}
+.progress-fill-vivian-lenormand {
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--vl-primary-light) 0%, var(--vl-primary) 100%);
+  transition: width 700ms ease;
+}
+.progress-label-vivian-lenormand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: var(--vl-primary-light);
+  margin-top: 4px;
+}
+
+/* ─── SearchInput ────────────────────────────────────────────────────────── */
+.search-input-vivian-lenormand {
+  width: 100%;
+  height: 48px;
+  padding-left: 44px;
+  padding-right: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 9999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--vl-foreground);
+  outline: none;
+  box-sizing: border-box;
+  transition: border 200ms ease, box-shadow 200ms ease;
+}
+.search-input-vivian-lenormand::placeholder { color: var(--vl-placeholder); }
+.search-input-vivian-lenormand:focus {
+  border: 1.5px solid rgba(109, 71, 66, 0.35);
+  box-shadow: 0 0 0 3px rgba(109, 71, 66, 0.07);
+}
+.search-wrapper-vivian-lenormand { position: relative; width: 100%; }
+.search-icon-vivian-lenormand {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  color: var(--vl-primary); pointer-events: none;
+}
+
+/* ─── Avatar ─────────────────────────────────────────────────────────────── */
+.avatar-vivian-lenormand {
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #E7D7D2;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-vivian-lenormand-sm { width: 36px; height: 36px; }
+.avatar-vivian-lenormand-md { width: 44px; height: 44px; }
+.avatar-vivian-lenormand-lg { width: 56px; height: 56px; }
+.avatar-vivian-lenormand-initials {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--vl-primary);
+}
+
+/* ─── NotificationBell ───────────────────────────────────────────────────── */
+.notification-bell-vivian-lenormand {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--vl-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 200ms ease;
+}
+.notification-bell-vivian-lenormand:hover { background: rgba(109, 71, 66, 0.07); }
+.notification-badge-vivian-lenormand {
+  position: absolute; top: 6px; right: 6px;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--vl-danger);
+  border: 1.5px solid #fffafa;
+}
+
+/* ─── SectionHeader ──────────────────────────────────────────────────────── */
+.section-header-vivian-lenormand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.section-header-vivian-lenormand h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vl-primary);
+  margin: 0;
+}
+.section-header-link-vivian-lenormand {
+  background: none; border: none; cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem; font-weight: 600;
+  color: var(--vl-primary-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ─── EmptyState ─────────────────────────────────────────────────────────── */
+.empty-state-vivian-lenormand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.empty-state-vivian-lenormand .icon {
+  font-size: 3rem; opacity: 0.35; margin-bottom: 1rem; line-height: 1;
+}
+.empty-state-vivian-lenormand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem; font-weight: 700;
+  color: var(--vl-primary);
+  margin: 0 0 0.5rem; line-height: 1.4; max-width: 300px;
+}
+.empty-state-vivian-lenormand p {
+  font-family: 'Lora', serif;
+  font-size: 0.875rem; color: var(--vl-primary-light);
+  max-width: 260px; line-height: 1.7; margin: 0;
+}
+
+/* ─── HeroBanner ─────────────────────────────────────────────────────────── */
+.hero-banner-vivian-lenormand {
+  position: relative; width: 100%;
+  min-height: 320px; overflow: hidden;
+  background: #E7D7D2;
+}
+.hero-banner-overlay-vivian-lenormand {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(67,41,39,0.75) 0%, rgba(67,41,39,0.1) 55%, transparent 100%);
+}
+.hero-banner-content-vivian-lenormand {
+  position: relative; z-index: 1;
+  padding: 3rem 1.5rem 5rem;
+  display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: flex-end;
+  min-height: 320px;
+}
+.hero-banner-headline-vivian-lenormand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.25rem);
+  color: var(--vl-cream); line-height: 1.25;
+  margin-bottom: 0.5rem; max-width: 480px;
+}
+.hero-banner-subtext-vivian-lenormand {
+  font-family: 'Lora', serif; font-size: 0.95rem;
+  color: rgba(253,243,246,0.85); margin-bottom: 1.25rem; max-width: 400px;
+}
+.hero-banner-dots-vivian-lenormand {
+  position: absolute; bottom: 1.25rem; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 8px; z-index: 2;
+}
+.hero-banner-dot-vivian-lenormand {
+  height: 8px; border-radius: 9999px; border: none; cursor: pointer; padding: 0;
+  background: rgba(247,194,202,0.4); transition: all 300ms ease;
+}
+.hero-banner-dot-vivian-lenormand.active { width: 20px; background: var(--vl-pink); }
+.hero-banner-dot-vivian-lenormand:not(.active) { width: 8px; }
+
+/* ─── DrawerMenu ─────────────────────────────────────────────────────────── */
+.drawer-backdrop-vivian-lenormand {
+  position: fixed; inset: 0; z-index: 40;
+  background: rgba(67,41,39,0.32);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: opacity 300ms ease;
+}
+.drawer-vivian-lenormand {
+  position: fixed; top: 0; right: 0; bottom: 0;
+  width: 280px; z-index: 50;
+  background: rgba(253,243,246,0.88);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid rgba(255,255,255,0.40);
+  box-shadow: -8px 0 32px rgba(67,41,39,0.12);
+  padding: 5rem 1.5rem 2rem;
+  display: flex; flex-direction: column; gap: 0.125rem;
+  transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-item-vivian-lenormand {
+  display: block; padding: 14px 0;
+  font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 500;
+  color: #3F3F3F; text-decoration: none;
+  border-bottom: 1px solid rgba(109,71,66,0.08);
+  transition: color 200ms ease;
+}
+
+/* ─── PurchaseCard ───────────────────────────────────────────────────────── */
+.purchase-card-vivian-lenormand {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.38);
+  border-radius: 20px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(67,41,39,0.10);
+  display: flex; flex-direction: column;
+  transition: transform 700ms ease, box-shadow 700ms ease;
+}
+.purchase-card-vivian-lenormand:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(67,41,39,0.16);
+}
+.purchase-card-img-vivian-lenormand {
+  position: relative; padding-bottom: 133.33%;
+}
+.purchase-card-body-vivian-lenormand {
+  padding: 14px 16px 16px;
+  display: flex; flex-direction: column; gap: 10px; flex: 1;
+}
+.purchase-card-title-vivian-lenormand {
+  font-family: 'Abhaya Libre', serif; font-size: 1rem;
+  font-weight: 700; color: #3F3F3F; margin: 0; line-height: 1.35;
+}
+.purchase-card-cta-vivian-lenormand {
+  margin-top: 2px;
+  background: rgba(255,255,255,0.55);
+  color: var(--vl-primary);
+  border: 1px solid rgba(109,71,66,0.22);
+  border-radius: 9999px;
+  font-family: 'Poppins', sans-serif; font-weight: 600;
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 9px 16px; cursor: pointer; transition: all 200ms ease;
+}
+
+/* ─── OfferCard ──────────────────────────────────────────────────────────── */
+.offer-card-vivian-lenormand {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.38);
+  border-radius: 20px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(67,41,39,0.10);
+  display: flex; flex-direction: column;
+  transition: transform 700ms ease, box-shadow 700ms ease;
+}
+.offer-card-vivian-lenormand:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(67,41,39,0.18);
+}
+.offer-card-badge-vivian-lenormand {
+  position: absolute; top: 10px; left: 10px;
+  background: linear-gradient(135deg, #A16E64, #6D4742);
+  border-radius: 9999px; padding: 3px 10px;
+  font-family: 'Poppins', sans-serif; font-size: 9px; font-weight: 700;
+  color: var(--vl-cream); text-transform: uppercase; letter-spacing: 0.14em;
+}
+.offer-card-price-vivian-lenormand {
+  font-family: 'Abhaya Libre', serif; font-size: 1.4rem;
+  font-weight: 700; color: var(--vl-primary);
+}
+.offer-card-price-original-vivian-lenormand {
+  font-family: 'Poppins', sans-serif; font-size: 0.75rem;
+  color: #C1C1C1; text-decoration: line-through;
+}
+.offer-card-microcopy-vivian-lenormand {
+  font-family: 'Poppins', sans-serif; font-size: 0.7rem; color: var(--vl-primary-light);
+}
+.offer-card-cta-vivian-lenormand {
+  background: linear-gradient(180deg, #A16E64 0%, #6D4742 100%);
+  color: var(--vl-cream); border: none; border-radius: 9999px;
+  font-family: 'Abhaya Libre', serif; font-weight: 600; font-size: 1rem;
+  padding: 11px 18px; cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(67,45,42,0.27); transition: all 200ms ease;
+}
+
+/* ─── TestimonialCard ────────────────────────────────────────────────────── */
+.testimonial-card-vivian-lenormand {
+  background: rgba(255,255,255,0.52);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.38);
+  border-radius: 20px; padding: 1.5rem; position: relative;
+}
+.testimonial-quote-mark-vivian-lenormand {
+  position: absolute; top: 10px; left: 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem; line-height: 1;
+  color: rgba(109,71,66,0.10);
+  user-select: none; pointer-events: none;
+}
+.testimonial-text-vivian-lenormand {
+  font-family: 'Lora', serif; font-style: italic;
+  font-size: 0.9rem; color: #3F3F3F;
+  line-height: 1.75; margin-top: 1.75rem; margin-bottom: 1rem;
+  position: relative; z-index: 1;
+}
+.testimonial-author-vivian-lenormand {
+  font-family: 'Poppins', sans-serif; font-size: 0.8rem;
+  font-weight: 600; color: var(--vl-primary); display: block;
+}
+.testimonial-role-vivian-lenormand {
+  font-family: 'Poppins', sans-serif; font-size: 0.72rem; color: var(--vl-primary-light);
+}

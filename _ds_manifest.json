@@ -1,12 +1,24 @@
 {
   "namespace": "VivianLenormand_DS",
+  "version": "1.1.0",
   "components": [
     { "name": "Button" },
     { "name": "Input" },
     { "name": "Badge" },
     { "name": "Card" },
     { "name": "Modal" },
-    { "name": "Separator" }
+    { "name": "Separator" },
+    { "name": "ProgressBar" },
+    { "name": "SearchInput" },
+    { "name": "Avatar" },
+    { "name": "NotificationBell" },
+    { "name": "SectionHeader" },
+    { "name": "EmptyState" },
+    { "name": "HeroBanner" },
+    { "name": "DrawerMenu" },
+    { "name": "PurchaseCard" },
+    { "name": "OfferCard" },
+    { "name": "TestimonialCard" }
   ],
   "globalCssPaths": ["tokens/colors.css", "styles.css"],
   "cards": [],
